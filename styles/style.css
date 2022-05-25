@@ -1,3 +1,16 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header div a {
+  color: black;
+}
+header nav a {
+  color: black;
+}
 
+section .flex-item {
+  display: flex;
+}
 
 /*# sourceMappingURL=style.css.map */
