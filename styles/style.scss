@@ -26,14 +26,6 @@ html {
 }
 
 
-body {
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #79838c;
-}
 
 div.item {
   display: flex;
@@ -51,6 +43,12 @@ div.item {
     right: auto;
     top: 5rem;
   }
+
+// цвет таймлайна
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #79838c;
+
   div {
     &:after {
       content: '';

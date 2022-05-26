@@ -18,15 +18,6 @@ html {
   height: 100%;
 }
 
-body {
-  height: inherit;
-  display: flex;
-  flex-direction: column;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #79838c;
-}
-
 div.item {
   display: flex;
   flex: auto;
@@ -41,6 +32,9 @@ div.item {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #79838c;
 }
 #timeline div:after, #timeline2 div:after {
   content: "";
