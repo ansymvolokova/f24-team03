@@ -1,3 +1,24 @@
+/* шрифты */
+@font-face {
+  font-family: 'ralewayregular';
+  src: url('/assets/fonts/raleway-regular-webfont.woff2') format('woff2'),
+       url('/assets/fonts/raleway-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'ralewaybold';
+  src: url('/assets/fonts/raleway-bold-webfont.woff2') format('woff2'),
+       url('/assets/fonts/raleway-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/**/
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -98,6 +119,73 @@ header {
     }
   }
 }
+
+/* home-page */ 
+
+.home-page {
+  display: flex;
+  position: relative;
+  height: 35rem;
+  background-color: #D0EBFF;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    padding-top: 3%;
+
+    p {
+      padding-left: 2%;
+      color: #1971C2;
+
+      font: {
+        size: 16;
+        family: 'ralewaybold';
+      }
+    }
+  }
+
+  .content_home {
+    padding-left: 10%;
+    width: 70%;
+  }
+
+  h1 {
+    width: 50%;
+    color: #1971C2;
+
+    font: {
+      size: 48;
+      family: 'ralewaybold';
+    }
+  }
+  
+  #circle {
+    display: flex;
+    align-self: flex-end;
+    height: 80%;
+    width: 40%;
+  }
+
+  button {
+    padding: 0.8rem 1rem;
+    border-radius: 30px;
+    border: solid 1px #1971C2;
+    background-color: #1971C2;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: {
+      size: 16;
+      family: 'ralewaybold';
+    }
+  }
+}
+
+.numbers-block {
+  position: absolute;
+  z-index: 9;
+  background: #FFFFFF;
+}
+/**/
 
 #education, #work-experience {
   .item {
