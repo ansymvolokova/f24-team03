@@ -1,3 +1,6 @@
+//переменные
+@import 'variables';
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -198,12 +201,8 @@ header {
   }
 }
 
-// Colors
-$dark-blue: #1971C2;
-$light-blue: #D0EBFF;
-$bg-color:#F9F9F9;
-$bg-color-cards:#F0F9FF;
 
-$font-color-main:#212529;
-$font-color-light:#F0F9FF;
+
+
+
 

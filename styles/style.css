@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 html {
   height: 100%;
 }
@@ -148,8 +149,6 @@ header nav a {
   height: 24px;
   background: #1971C2;
   border: 2px solid #FFFFFF;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
   position: absolute;
   left: 126px;
@@ -163,6 +162,4 @@ header nav a {
 }
 #education .item .timeline > div .year ul li:not(:first-child), #work-experience .item .timeline > div .year ul li:not(:first-child) {
   margin-top: 0.5rem;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
