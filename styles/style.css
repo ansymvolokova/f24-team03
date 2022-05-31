@@ -1,24 +1,156 @@
+@charset "UTF-8";
+/* home-page */
+.home-page {
+  display: flex;
+  position: relative;
+  height: 40rem;
+  background-color: #D0EBFF;
+}
+
+.home-page .logo {
+  display: flex;
+  align-items: center;
+  padding-top: 3%;
+}
+
+.home-page .logo img {
+  width: 10%;
+}
+
+.home-page .logo p {
+  padding-left: 2%;
+  padding-top: 1%;
+  letter-spacing: 2px;
+  color: #1971C2;
+  font-font: "raleway";
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+.home-page .content_home {
+  padding-left: 10%;
+  width: 80%;
+}
+
+.home-page .content_home .help {
+  width: 65%;
+  padding-bottom: 15px;
+  font-size: 14pt;
+  font-weight: normal;
+  font-font: "raleway";
+}
+
+.home-page .content_home .button-form {
+  padding-left: 25%;
+}
+
+.home-page h1 {
+  padding-top: 2%;
+  padding-bottom: 4%;
+  width: 70%;
+  letter-spacing: 2px;
+  color: #1971C2;
+  font-font: "raleway";
+  font-size: 43pt;
+  font-weight: bold;
+}
+
+.home-page #circle {
+  display: flex;
+  align-self: flex-end;
+  height: 80%;
+  width: 40%;
+}
+
+.home-page button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  border: solid 1px #1971C2;
+  background-color: #1971C2;
+  color: #FFFFFF;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  font-size: 16pt;
+  font-weight: normal;
+  font-font: "raleway";
+}
+
+.numbers-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 1077px;
+  height: 210px;
+  right: 15%;
+  top: 630px;
+  border-radius: 8px;
+  background: #FFFFFF;
+}
+
+.numbers-block .numbers {
+  font-size: 35pt;
+  font-weight: bold;
+  font-font: "raleway";
+  color: #1971C2;
+}
+
+.numbers-block p {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 16pt;
+  font-weight: normal;
+  font-font: "raleway";
+  color: #1971C2;
+}
+
+/**/
+/* шрифты */
+@font-face {
+  font-family: 'raleway';
+  src: url("/assets/fonts/raleway-bold-webfont.woff2") format("woff2"), url("/assets/fonts/raleway-bold-webfont.woff") format("woff"), url("/assets/fonts/raleway-bold-webfont.svg#ralewaybold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url("/assets/fonts/raleway-regular-webfont.woff2") format("woff2"), url("/assets/fonts/raleway-regular-webfont.woff") format("woff"), url("/assets/fonts/raleway-regular-webfont.svg#ralewayregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**/
 html {
   height: 100%;
+  overflow-x: hidden;
+  /*для горизонтального*/
 }
 
 header .nav-menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: #D0EBFF;
 }
+
 header .nav-menu > *:not(:last-child) {
   margin-right: 3rem;
 }
+
 header .nav-menu .links {
   display: flex;
 }
+
 header .nav-menu .links > *:not(:last-child) {
   margin-right: 1rem;
 }
+
 header .nav-menu .links a {
   color: #1971C2;
 }
+
 header .nav-menu button {
   padding: 0.25rem 0.5rem;
   border-radius: 30px;
@@ -27,12 +159,15 @@ header .nav-menu button {
   color: #1971C2;
   cursor: pointer;
 }
+
 header .nav-menu img {
   cursor: pointer;
 }
+
 header div a {
   color: black;
 }
+
 header nav a {
   color: black;
 }
@@ -42,31 +177,39 @@ header nav a {
   flex-direction: column;
   align-items: center;
 }
+
 #services > *:not(:last-child) {
   margin-bottom: 4rem;
 }
+
 #services .content {
   display: flex;
   flex-direction: column;
 }
+
 #services .content > *:not(:last-child) {
   margin-bottom: 4rem;
 }
+
 #services .content .row {
   display: flex;
   align-items: center;
 }
+
 #services .content .row > *:not(:last-child) {
   margin-right: 2rem;
 }
+
 #services .content .row .item {
   flex: 1;
   display: flex;
   align-items: center;
 }
+
 #services .content .row .item > *:not(:last-child) {
   margin-right: 1rem;
 }
+
 #services .content .row .item .checkmark {
   min-width: 34px;
   min-height: 34px;
@@ -76,6 +219,7 @@ header nav a {
   align-items: center;
   background-color: #D0EBFF;
 }
+
 #services .content .row .item p {
   margin: 0;
 }
@@ -86,6 +230,7 @@ header nav a {
   overflow-y: auto;
   padding: 0 1rem 0 1rem;
 }
+
 #education .item .timeline, #work-experience .item .timeline {
   display: table;
   height: 100%;
@@ -96,54 +241,65 @@ header nav a {
   -moz-osx-font-smoothing: grayscale;
   color: #000;
 }
+
 #education .item .timeline > div, #work-experience .item .timeline > div {
   position: relative;
 }
+
 #education .item .timeline > div > *:not(:last-child), #work-experience .item .timeline > div > *:not(:last-child) {
   margin-bottom: 1.5rem;
 }
+
 #education .item .timeline > div:after, #work-experience .item .timeline > div:after {
-  content: "";
+  content: '';
   width: 2px;
   position: absolute;
-  top: 0.5rem;
+  top: .5rem;
   bottom: 0;
   left: 139px;
   z-index: 1;
   background: #1971C2;
 }
+
 #education .item .timeline > div .year, #work-experience .item .timeline > div .year {
   position: relative;
   display: flex;
   align-items: center;
 }
+
 #education .item .timeline > div .year > *:not(:last-child), #work-experience .item .timeline > div .year > *:not(:last-child) {
   margin-right: 70px;
 }
+
 #education .item .timeline > div .year:first-child section, #work-experience .item .timeline > div .year:first-child section {
   margin-top: -1.3em;
   padding-bottom: 0;
 }
+
 #education .item .timeline > div .year h4, #work-experience .item .timeline > div .year h4 {
   min-width: 100px;
   text-align: right;
 }
+
 #education .item .timeline > div .year ul, #work-experience .item .timeline > div .year ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   font-size: 1em;
 }
+
 @media (min-width: 62em) {
   #education .item .timeline > div .year ul, #work-experience .item .timeline > div .year ul {
     font-size: 1.1em;
   }
 }
+
 #education .item .timeline > div .year ul:last-child, #work-experience .item .timeline > div .year ul:last-child {
   margin-bottom: 0;
 }
+
 #education .item .timeline > div .year ul:first-of-type:after, #work-experience .item .timeline > div .year ul:first-of-type:after {
-  content: "";
+  content: '';
   width: 24px;
   height: 24px;
   background: #1971C2;
@@ -156,9 +312,12 @@ header nav a {
   z-index: 2;
   margin: auto;
 }
+
 #education .item .timeline > div .year ul li, #work-experience .item .timeline > div .year ul li {
-  margin-left: 0.5rem;
+  margin-left: .5rem;
 }
+
 #education .item .timeline > div .year ul li:not(:first-child), #work-experience .item .timeline > div .year ul li:not(:first-child) {
   margin-top: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
+
