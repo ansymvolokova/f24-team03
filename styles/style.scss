@@ -1,17 +1,17 @@
 /* шрифты */
 @font-face {
-  font-family: 'ralewayregular';
-  src: url('/assets/fonts/raleway-regular-webfont.woff2') format('woff2'),
-       url('/assets/fonts/raleway-regular-webfont.woff') format('woff');
+  font-family: 'RalewayRegular';
+  src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+       url('fonts/raleway-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
 }
 
 @font-face {
-  font-family: 'ralewaybold';
-  src: url('/assets/fonts/raleway-bold-webfont.woff2') format('woff2'),
-       url('/assets/fonts/raleway-bold-webfont.woff') format('woff');
+  font-family: 'RalewayBold';
+  src: url('./fonts/raleway-bold-webfont.woff2') format('woff2'),
+       url('./fonts/raleway-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -46,6 +46,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: #D0EBFF;
     @include row-gap(3rem);
 
     .links {
@@ -125,7 +126,7 @@ header {
 .home-page {
   display: flex;
   position: relative;
-  height: 35rem;
+  height: 40rem;
   background-color: #D0EBFF;
 
   .logo {
@@ -138,8 +139,8 @@ header {
       color: #1971C2;
 
       font: {
-        size: 16;
-        family: 'ralewaybold';
+        size: 16pt;
+        family: 'RalewayBold';
       }
     }
   }
@@ -154,8 +155,8 @@ header {
     color: #1971C2;
 
     font: {
-      size: 48;
-      family: 'ralewaybold';
+      size: 48pt;
+      family: 'RalewayBold';
     }
   }
   
@@ -174,15 +175,20 @@ header {
     color: #FFFFFF;
     cursor: pointer;
     font: {
-      size: 16;
-      family: 'ralewaybold';
+      size: 16pt;
+      family: 'RalewayBold';
     }
   }
 }
 
 .numbers-block {
   position: absolute;
-  z-index: 9;
+  width: 1077px;
+  height: 210px;
+  right: 15%;
+  top: 630px;
+
+  border-radius: 8px;
   background: #FFFFFF;
 }
 /**/
