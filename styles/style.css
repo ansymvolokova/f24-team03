@@ -1,15 +1,15 @@
 @charset "UTF-8";
 /* шрифты */
 @font-face {
-  font-family: 'ralewayregular';
-  src: url("/assets/fonts/raleway-regular-webfont.woff2") format("woff2"), url("/assets/fonts/raleway-regular-webfont.woff") format("woff");
+  font-family: 'RalewayRegular';
+  src: url("fonts/raleway-regular-webfont.woff2") format("woff2"), url("fonts/raleway-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ralewaybold';
-  src: url("/assets/fonts/raleway-bold-webfont.woff2") format("woff2"), url("/assets/fonts/raleway-bold-webfont.woff") format("woff");
+  font-family: 'RalewayBold';
+  src: url("./fonts/raleway-bold-webfont.woff2") format("woff2"), url("./fonts/raleway-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -23,6 +23,7 @@ header .nav-menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: #D0EBFF;
 }
 
 header .nav-menu > *:not(:last-child) {
@@ -118,7 +119,7 @@ header nav a {
 .home-page {
   display: flex;
   position: relative;
-  height: 35rem;
+  height: 40rem;
   background-color: #D0EBFF;
 }
 
@@ -131,8 +132,8 @@ header nav a {
 .home-page .logo p {
   padding-left: 2%;
   color: #1971C2;
-  font-size: 16;
-  font-family: 'ralewaybold';
+  font-size: 16pt;
+  font-family: 'RalewayBold';
 }
 
 .home-page .content_home {
@@ -143,8 +144,8 @@ header nav a {
 .home-page h1 {
   width: 50%;
   color: #1971C2;
-  font-size: 48;
-  font-family: 'ralewaybold';
+  font-size: 48pt;
+  font-family: 'RalewayBold';
 }
 
 .home-page #circle {
@@ -161,13 +162,17 @@ header nav a {
   background-color: #1971C2;
   color: #FFFFFF;
   cursor: pointer;
-  font-size: 16;
-  font-family: 'ralewaybold';
+  font-size: 16pt;
+  font-family: 'RalewayBold';
 }
 
 .numbers-block {
   position: absolute;
-  z-index: 9;
+  width: 1077px;
+  height: 210px;
+  right: 15%;
+  top: 630px;
+  border-radius: 8px;
   background: #FFFFFF;
 }
 
