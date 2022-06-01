@@ -1,0 +1,52 @@
+.banner {
+    width: 1160px;
+    height: 260px;
+    background-color: $dark-blue;
+    position: relative;
+    max-width: 100%;
+    margin: 116px auto; 
+    box-sizing:border-box;
+
+    img {
+        width: 44px;
+        height: 31px;
+        position: absolute;
+        top: -50px;
+        left: 72px;
+
+    }
+    h1 {
+        @extend %h1;
+        color: $font-color-light;
+        position: absolute;
+        top: 96px;
+        left: 120px;
+    }
+
+}
+.carousel-item {
+    margin: 72px auto; 
+}
+.reviews-card {
+    width: 446px;
+    background-color: $bg-color-cards;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 72px;
+
+    p {
+        width: 395px;
+        margin: 24px;
+        @extend %p;
+    }
+    span {
+        color: #ABB1B9;
+        text-transform: uppercase;
+    }
+    span.reviews-card__patient {
+        color: $dark-blue;
+        text-transform: none;
+
+    }
+
+}
