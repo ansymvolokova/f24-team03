@@ -6,3 +6,12 @@ $bg-color-cards:#F0F9FF;
 
 $font-color-main:#212529;
 $font-color-light:#F0F9FF;
+
+// fonts
+
+%h1 {
+    font-family:'raleway';
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 130%;
+}
