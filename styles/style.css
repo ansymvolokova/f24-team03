@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 .banner h1 {
   font-family: "raleway";
   font-weight: bold;
@@ -16,7 +17,6 @@
   color: #212529;
 }
 
-/* home-page */
 .home-page {
   display: flex;
   position: relative;
@@ -28,9 +28,15 @@
   align-items: center;
   padding-top: 3%;
 }
-.home-page .logo img {
+
+.home-page .logo .logo_wraper {
   width: 10%;
 }
+
+.home-page .logo img {
+  width: 100%;
+}
+
 .home-page .logo p {
   padding-left: 2%;
   padding-top: 1%;
@@ -42,7 +48,6 @@
 }
 .home-page .content_home {
   padding-left: 10%;
-  width: 80%;
 }
 .home-page .content_home .help {
   width: 65%;
@@ -57,18 +62,23 @@
 .home-page h1 {
   padding-top: 2%;
   padding-bottom: 4%;
-  width: 70%;
   letter-spacing: 2px;
   color: #1971C2;
   font-font: "raleway";
-  font-size: 43pt;
+  font-size: calc(20px + 23 * (100vw / 605));
   font-weight: bold;
 }
+
+.home-page .circle-wraper {
+  display: flex;
+  align-items: flex-end;
+  width: 40%;
+}
+
 .home-page #circle {
   display: flex;
   align-self: flex-end;
-  height: 80%;
-  width: 40%;
+  width: 100%;
 }
 .home-page button {
   padding: 0.8rem 1.5rem;
@@ -338,5 +348,7 @@ header nav a {
   margin-left: 0.5rem;
 }
 #education .item .timeline > div .year ul li:not(:first-child), #work-experience .item .timeline > div .year ul li:not(:first-child) {
+
   margin-top: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
+
