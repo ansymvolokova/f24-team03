@@ -6,6 +6,16 @@
   line-height: 130%;
 }
 
+.reviews-card p {
+  font-family: "raleway";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #212529;
+}
+
 /* home-page */
 .home-page {
   display: flex;
@@ -26,7 +36,7 @@
   padding-top: 1%;
   letter-spacing: 2px;
   color: #1971C2;
-  font-family: "raleway";
+  font-font: "raleway";
   font-size: 16pt;
   font-weight: bold;
 }
@@ -39,7 +49,7 @@
   padding-bottom: 15px;
   font-size: 14pt;
   font-weight: normal;
-  font-family: "raleway";
+  font-font: "raleway";
 }
 .home-page .content_home .button-form {
   padding-left: 25%;
@@ -50,7 +60,7 @@
   width: 70%;
   letter-spacing: 2px;
   color: #1971C2;
-  font-family: "raleway";
+  font-font: "raleway";
   font-size: 43pt;
   font-weight: bold;
 }
@@ -70,7 +80,7 @@
   letter-spacing: 1.5px;
   font-size: 16pt;
   font-weight: normal;
-  font-family: "raleway";
+  font-font: "raleway";
 }
 
 .numbers-block {
@@ -88,7 +98,7 @@
 .numbers-block .numbers {
   font-size: 35pt;
   font-weight: bold;
-  font-family: "raleway";
+  font-font: "raleway";
   color: #1971C2;
 }
 .numbers-block p {
@@ -97,7 +107,7 @@
   letter-spacing: 2px;
   font-size: 16pt;
   font-weight: normal;
-  font-family: "raleway";
+  font-font: "raleway";
   color: #1971C2;
 }
 
@@ -123,6 +133,30 @@
   position: absolute;
   top: 96px;
   left: 120px;
+}
+
+.carousel-item {
+  margin: 72px auto;
+}
+
+.reviews-card {
+  width: 446px;
+  background-color: #F0F9FF;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 72px;
+}
+.reviews-card p {
+  width: 395px;
+  margin: 24px;
+}
+.reviews-card span {
+  color: #ABB1B9;
+  text-transform: uppercase;
+}
+.reviews-card span.reviews-card__patient {
+  color: #1971C2;
+  text-transform: none;
 }
 
 /* шрифты */
