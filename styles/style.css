@@ -26,7 +26,7 @@
   padding-top: 1%;
   letter-spacing: 2px;
   color: #1971C2;
-  font-font: "raleway";
+  font-family: "raleway";
   font-size: 16pt;
   font-weight: bold;
 }
@@ -39,7 +39,7 @@
   padding-bottom: 15px;
   font-size: 14pt;
   font-weight: normal;
-  font-font: "raleway";
+  font-family: "raleway";
 }
 .home-page .content_home .button-form {
   padding-left: 25%;
@@ -50,7 +50,7 @@
   width: 70%;
   letter-spacing: 2px;
   color: #1971C2;
-  font-font: "raleway";
+  font-family: "raleway";
   font-size: 43pt;
   font-weight: bold;
 }
@@ -70,7 +70,7 @@
   letter-spacing: 1.5px;
   font-size: 16pt;
   font-weight: normal;
-  font-font: "raleway";
+  font-family: "raleway";
 }
 
 .numbers-block {
@@ -88,7 +88,7 @@
 .numbers-block .numbers {
   font-size: 35pt;
   font-weight: bold;
-  font-font: "raleway";
+  font-family: "raleway";
   color: #1971C2;
 }
 .numbers-block p {
@@ -97,7 +97,7 @@
   letter-spacing: 2px;
   font-size: 16pt;
   font-weight: normal;
-  font-font: "raleway";
+  font-family: "raleway";
   color: #1971C2;
 }
 
