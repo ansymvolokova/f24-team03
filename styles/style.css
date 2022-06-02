@@ -6,6 +6,16 @@
   line-height: 130%;
 }
 
+.reviews-card p {
+  font-family: "raleway";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #212529;
+}
+
 .home-page {
   display: flex;
   position: relative;
@@ -127,6 +137,39 @@
   position: absolute;
   top: 96px;
   left: 120px;
+}
+
+.carousel-item {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 24px;
+}
+
+.reviews-card {
+  width: 450px;
+  background-color: #F0F9FF;
+  margin: 72px auto;
+}
+.reviews-card p {
+  width: 395px;
+  margin: 24px;
+}
+.reviews-card span {
+  color: #ABB1B9;
+  text-transform: uppercase;
+}
+.reviews-card span.reviews-card__patient {
+  color: #1971C2;
+  text-transform: none;
+}
+
+.carousel li {
+  border: 1px solid #1971C2;
+  border-radius: 50px;
+}
+.carousel a {
+  color: black;
 }
 
 /* шрифты */
