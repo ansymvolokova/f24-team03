@@ -17,6 +17,7 @@
     }
     h1 {
         @extend %h1;
+        font-size: 1rem;
         color: $font-color-light;
         position: absolute;
         top: 96px;
@@ -24,15 +25,17 @@
     }
 
 }
+
 .carousel-item {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 72px;
     margin: 72px auto; 
 }
 .reviews-card {
     width: 446px;
     background-color: $bg-color-cards;
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 72px;
+    
 
     p {
         width: 395px;
