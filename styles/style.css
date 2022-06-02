@@ -1,20 +1,9 @@
 @charset "UTF-8";
-
 .banner h1 {
   font-family: "raleway";
   font-weight: bold;
   font-size: 48px;
   line-height: 130%;
-}
-
-.reviews-card p {
-  font-family: "raleway";
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #212529;
 }
 
 .home-page {
@@ -28,15 +17,12 @@
   align-items: center;
   padding-top: 3%;
 }
-
 .home-page .logo .logo_wraper {
   width: 10%;
 }
-
 .home-page .logo img {
   width: 100%;
 }
-
 .home-page .logo p {
   padding-left: 2%;
   padding-top: 1%;
@@ -65,16 +51,14 @@
   letter-spacing: 2px;
   color: #1971C2;
   font-font: "raleway";
-  font-size: calc(20px + 23 * (100vw / 605));
+  font-size: calc(20px + 3.8016528926vw);
   font-weight: bold;
 }
-
 .home-page .circle-wraper {
   display: flex;
   align-items: flex-end;
   width: 40%;
 }
-
 .home-page #circle {
   display: flex;
   align-self: flex-end;
@@ -121,7 +105,6 @@
   color: #1971C2;
 }
 
-/**/
 .banner {
   width: 1160px;
   height: 260px;
@@ -139,34 +122,11 @@
   left: 72px;
 }
 .banner h1 {
+  font-size: 1rem;
   color: #F0F9FF;
   position: absolute;
   top: 96px;
   left: 120px;
-}
-
-.carousel-item {
-  margin: 72px auto;
-}
-
-.reviews-card {
-  width: 446px;
-  background-color: #F0F9FF;
-  display: flex;
-  flex-wrap: nowrap;
-  margin: 72px;
-}
-.reviews-card p {
-  width: 395px;
-  margin: 24px;
-}
-.reviews-card span {
-  color: #ABB1B9;
-  text-transform: uppercase;
-}
-.reviews-card span.reviews-card__patient {
-  color: #1971C2;
-  text-transform: none;
 }
 
 /* шрифты */
@@ -348,7 +308,5 @@ header nav a {
   margin-left: 0.5rem;
 }
 #education .item .timeline > div .year ul li:not(:first-child), #work-experience .item .timeline > div .year ul li:not(:first-child) {
-
   margin-top: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
-

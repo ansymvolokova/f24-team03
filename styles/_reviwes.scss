@@ -26,30 +26,42 @@
 
 }
 
-.carousel-item {
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 72px;
-    margin: 72px auto; 
-}
-.reviews-card {
-    width: 446px;
-    background-color: $bg-color-cards;
+// .carousel-item {    
+//     display: flex;
+//     flex-wrap: nowrap; 
+//     width: 100%; 
+//     padding: 24px;
+// }
+// .reviews-card {
+//     width: 450px;
+//     background-color: $bg-color-cards;
+//     margin: 72px auto;
     
 
-    p {
-        width: 395px;
-        margin: 24px;
-        @extend %p;
-    }
-    span {
-        color: #ABB1B9;
-        text-transform: uppercase;
-    }
-    span.reviews-card__patient {
-        color: $dark-blue;
-        text-transform: none;
+//     p {
+//         width: 395px;
+//         margin: 24px;
+//         @extend %p;
+//     }
+//     span {
+//         color: #ABB1B9;
+//         text-transform: uppercase;
+//     }
+//     span.reviews-card__patient {
+//         color: $dark-blue;
+//         text-transform: none;
 
-    }
+//     }
 
-}
+// }
+// .carousel {
+//     li {
+//         border: 1px solid $dark-blue;
+//         border-radius: 50px;
+//     }
+//     a{
+//         color: black;
+//     }
+// }
+
+
