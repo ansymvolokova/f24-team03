@@ -26,6 +26,10 @@
 
 }
 
+h3 {
+    @extend %h3
+}
+
 // Карусель
 .carousel-item {
     margin-top: 600px;
