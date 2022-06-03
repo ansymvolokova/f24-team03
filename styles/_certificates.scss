@@ -1,0 +1,36 @@
+.certificates {
+    & h2{
+    text-align: center;  
+    @extend %h1;
+    font-size: 16pt;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    color: $dark-blue;
+}
+    & .carousel-item  {
+        display: flex;
+        margin: 0;
+        padding: 0 1rem;
+        gap: 3vw; 
+    } 
+}
+
+.carousel-inner {
+    margin: 0;
+    padding: 0 1rem;
+    & img{
+       @extend %size;
+    }
+}
+
+
+.carousel-item .active {
+    display: flex;
+    gap:3vw;
+    padding: 3rem;
+    
+    
+} 
+
+
+

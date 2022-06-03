@@ -1,0 +1,102 @@
+%position{
+    width: 84vw;
+    height: 35vh;
+    margin: 0 auto;
+}
+%size {
+    width:100%;
+    height: 100%;
+}
+
+.patents{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+.patents__banner{
+    @extend %position;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: $dark-blue;
+
+
+    & div {
+        width: 20%;
+        height: 20%;
+    }
+
+    & img{
+        @extend %size;
+    }
+
+    & h2{
+        margin: .4em 0 .4em 2.5em; 
+        font-family: $font;
+        font-size: calc(20px + 16 * (100vw / 570.14));
+        font-weight: 700;
+        color: $bg-color;
+        letter-spacing: 1.5px;
+        line-height: 130%;
+    }
+}
+
+.patents__video{
+    width: 45vw;
+    height: 50vh;
+    align-self: center;
+    margin: 2rem 0 2rem 0;
+
+    & video{
+        @extend %size;
+    }
+}
+.patents__description{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    @extend %position;
+    height: auto;
+
+    @media (max-width: 540px) {
+        flex-direction: column; ;
+    }
+
+    & .patents__1, .patents__2{
+        text-align: center;
+        padding: 2rem;
+        background-color: $bg-color-cards;
+    }
+        & h3{
+        margin-bottom: 2.7em;
+        font-size: calc(.87rem + .3vw);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+        & p{
+            margin-bottom: 2em;
+            font-size: calc(.87rem + .3vw);
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        & button{
+            display: inline-block;
+            font-size: calc(.87rem + .3vw);
+            letter-spacing: 1px;
+            background: $dark-blue; 
+            color: #fff;
+            padding: 0.9rem 1.2rem; 
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 40px; 
+            border: none;
+        }
+
+        & button:hover{
+        cursor: pointer;
+        transform: scale(1.07);
+        box-shadow: 4px 4px 16px rgba(78, 55, 55, 0.15);
+        transition:0.4s ease;
+    }
+}
