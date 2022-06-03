@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 .banner h1, .certificates h2 {
   font-family: 'raleway';
   font-weight: bold;
@@ -34,15 +35,12 @@
           align-items: center;
   padding-top: 3%;
 }
-
 .home-page .logo .logo_wraper {
   width: 10%;
 }
-
 .home-page .logo img {
   width: 100%;
 }
-
 .home-page .logo p {
   padding-left: 2%;
   padding-top: 1%;
@@ -75,10 +73,9 @@
   letter-spacing: 2px;
   color: #1971C2;
   font-font: "raleway";
-  font-size: calc(20px + 23 * (100vw / 605));
+  font-size: calc(20px + 3.8016528926vw);
   font-weight: bold;
 }
-
 .home-page .circle-wraper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,7 +85,6 @@
           align-items: flex-end;
   width: 40%;
 }
-
 .home-page #circle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,6 +166,7 @@
 }
 
 .banner h1 {
+  font-size: 3rem;
   color: #F0F9FF;
   position: absolute;
   top: 96px;
@@ -177,11 +174,15 @@
 }
 
 .carousel-item {
-  margin: 72px auto;
+  margin-top: 600px;
+}
+
+.carousel-caption {
+  display: flex;
 }
 
 .reviews-card {
-  width: 446px;
+  width: 450px;
   background-color: #F0F9FF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,6 +207,18 @@
   text-transform: none;
 }
 
+
+.carousel li {
+  border: 1px solid #1971C2;
+  border-radius: 50px;
+}
+
+.carousel-control-prev-icon {
+  display: flex;
+  color: #1971C2;
+  align-items: center;
+  justify-content: center;
+}
 .patents__banner, .patents__description {
   width: 84vw;
   height: 35vh;
@@ -610,4 +623,3 @@ header nav a {
 #education .item .timeline > div .year ul li:not(:first-child), #work-experience .item .timeline > div .year ul li:not(:first-child) {
   margin-top: .5rem;
 }
-/*# sourceMappingURL=style.css.map */

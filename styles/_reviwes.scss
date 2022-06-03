@@ -17,6 +17,7 @@
     }
     h1 {
         @extend %h1;
+        font-size: 3rem;
         color: $font-color-light;
         position: absolute;
         top: 96px;
@@ -24,15 +25,23 @@
     }
 
 }
+
+// Карусель
 .carousel-item {
-    margin: 72px auto; 
+    margin-top: 600px;
 }
-.reviews-card {
-    width: 446px;
-    background-color: $bg-color-cards;
+.carousel-caption {
     display: flex;
-    flex-wrap: nowrap;
-    margin: 72px;
+    
+}
+
+
+.reviews-card {
+    width: 450px;
+    background-color: $bg-color-cards;
+    margin: 72px auto;
+    
+    
 
     p {
         width: 395px;
@@ -50,3 +59,18 @@
     }
 
 }
+.carousel {
+    li {
+        border: 1px solid $dark-blue;
+        border-radius: 50px;
+    }
+}
+.carousel-control-prev-icon {
+    display: flex;
+    color: $dark-blue;
+    align-items: center;
+    justify-content: center;
+}
+
+
+

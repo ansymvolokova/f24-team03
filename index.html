@@ -8,9 +8,8 @@
     <meta name="description" content="Восстановление организма после заболеваний и травм">
     <meta name="keywords" content="нейрохирург,опорно-двигательный аппарат, реабилитация, постковидный синдром ">
     <link rel="stylesheet" href="styles/normalize.css">
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     <title>Доктор Фомченков</title>
 </head>
@@ -47,11 +46,20 @@
     </div>
 
     <div class="numbers-block">
-        <div><p class="numbers">12 500</p><p>Пациентов</p></div>
+        <div>
+            <p class="numbers">12 500</p>
+            <p>Пациентов</p>
+        </div>
         <img src="./assets/img/divider.svg" alt="divider">
-        <div><p class="numbers">38</p><p>лет знаний и опыта</p></div>
+        <div>
+            <p class="numbers">38</p>
+            <p>лет знаний и опыта</p>
+        </div>
         <img src="./assets/img/divider.svg" alt="divider">
-        <div><p class="numbers">2</p><p>патента</p></div>
+        <div>
+            <p class="numbers">2</p>
+            <p>патента</p>
+        </div>
     </div>
 
     <section id="services">
@@ -90,14 +98,16 @@
             </div>
         </div>
     </section>
+    <!-- Баннер -->
     <section id="cases">
         <!-- <h2>Помогаю восстанавливаться даже после сложных травм</h2> -->
-    
     <div class="banner banner__review">
         <img src="assets/img/commas.png" alt="Commas" class="banner banner_commas">
-        <h1 class="h1 h1_light">Помогаю восстанавливаться <br>даже после сложных травм
+        <h1 class="h1">Помогаю восстанавливаться <br>даже после сложных травм
         </h1>
     </div>
+
+    <!-- Карусель -->
     <section class="reviews">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -107,7 +117,66 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="reviews-card reviews-card__1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="reviews-card">
+                            <p>
+                                <span>Проблема</span><br>
+                                Черепно-мозговая травма (автотравма). Удалена гематома в правой лобнотеменновисочной
+                                области
+                                в день травмы через 4 часа. <br>
+
+                                Поступил на реабилитацию через 1,5 месяца — левовосторонний гемипарез, моторно-сенсорная
+                                афазия <br><br>
+
+                                <span>Лечение</span><br>
+                                Ноотропы, антиконвульсанты, рефлексотерапия, лечебная физкультура <br><br>
+
+                                <span>Результат</span><br>
+                                Научился ходить с тростью, улучшилась речь и её понимание <br><br>
+                                <span class="reviews-card__patient">Мужчина, 56 лет</span>
+                            </p>
+                        </div>
+                        <div class="reviews-card">
+                            <p>
+                                <span>Проблема</span><br>
+                                Черепно-мозговая травма (автотравма). Удалена гематома в правой лобнотеменновисочной
+                                области
+                                в день травмы через 4 часа. <br>
+
+                                Поступил на реабилитацию через 1,5 месяца — левовосторонний гемипарез, моторно-сенсорная
+                                афазия <br><br>
+
+                                <span>Лечение</span><br>
+                                Ноотропы, антиконвульсанты, рефлексотерапия, лечебная физкультура <br><br>
+
+                                <span>Результат</span><br>
+                                Научился ходить с тростью, улучшилась речь и её понимание <br><br>
+                                <span class="reviews-card__patient">Мужчина, 56 лет</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block reviews-card">
+                        <p>
+                            <span>Проблема</span><br>
+                            Последствия перелома тазового кольца (автотравма), металлоостиосинтез крестца, симфиза,
+                            перелом поперечный отростков L4, L5. Справа — выраженный болевой синдром, парез правой ноги
+                            <br><br>
+
+                            <span>Лечение</span><br>
+                            Блокады, анальгетики, НПВС, стероиды, рефлексотерапия и лечебная физкультура <br><br>
+
+                            <span>Результат</span><br>
+                            Ходит без посторонней помощи, боль не беспокоит. Сила в правой ноге восстановилась до 5
+                            баллов/Х баллов <br><br>
+                            <span class="reviews-card__patient">Женщина, 52 года</span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-none d-md-block reviews-card reviews-card__3">
                         <p>
                             <span>Проблема</span><br>
                             Черепно-мозговая травма (автотравма). Удалена гематома в правой лобнотеменновисочной области
@@ -123,32 +192,8 @@
                             Научился ходить с тростью, улучшилась речь и её понимание <br><br>
                             <span class="reviews-card__patient">Мужчина, 56 лет</span>
                         </p>
-
                     </div>
-                    <div class="reviews-card reviews-card__2">
-                        <p>
-                            <span>Проблема</span><br>
-                            Черепно-мозговая травма (автотравма). Удалена гематома в правой лобнотеменновисочной области
-                            в день травмы через 4 часа. <br>
 
-                            Поступил на реабилитацию через 1,5 месяца — левовосторонний гемипарез, моторно-сенсорная
-                            афазия <br><br>
-
-                            <span>Лечение</span><br>
-                            Ноотропы, антиконвульсанты, рефлексотерапия, лечебная физкультура <br><br>
-
-                            <span>Результат</span><br>
-                            Научился ходить с тростью, улучшилась речь и её понимание <br><br>
-                            <span class="reviews-card__patient">Мужчина, 56 лет</span>
-                        </p>
-
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="..." alt="Второй слайд">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="..." alt="Третий слайд">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -160,8 +205,6 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </section>
-
     </section>
     <section id="work-experience">
         <div class="item">
@@ -560,9 +603,16 @@
     </section>
     <footer>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
 </body>
 
