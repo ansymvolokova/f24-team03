@@ -1,52 +1,51 @@
-.banner {
-    width: 1160px;
-    height: 260px;
-    background-color: $dark-blue;
-    position: relative;
-    max-width: 100%;
-    margin: 116px auto; 
-    box-sizing:border-box;
+#cases {
+    background-color: $light-blue;
+    margin: 120px 0;
+}
 
+.quote {
+    position: relative;
     img {
         width: 44px;
         height: 31px;
         position: absolute;
         top: -50px;
         left: 72px;
+        color: $dark-blue;
 
     }
-    h1 {
-        @extend %h1;
-        font-size: 3rem;
-        color: $font-color-light;
-        position: absolute;
-        top: 96px;
-        left: 120px;
+    h2{
+        @extend %h2;
+        color: $dark-blue;
+        letter-spacing: 1.5px;
+        line-height: 130%;
     }
 
 }
 
 h3 {
-    @extend %h3
+    @extend %h3;
+    color: $dark-blue;
+    text-align: center;
+    padding: 72px;
 }
+
 
 // Карусель
 .carousel-item {
     margin-top: 600px;
 }
-.carousel-caption {
-    display: flex;
-    
-}
-
 
 .reviews-card {
-    width: 450px;
-    background-color: $bg-color-cards;
+    display: flex;
     margin: 72px auto;
-    
-    
 
+    .case {
+        width: 450px;
+        background-color: $bg-color-cards;
+        margin: 72px auto;
+    }
+      
     p {
         width: 395px;
         margin: 24px;

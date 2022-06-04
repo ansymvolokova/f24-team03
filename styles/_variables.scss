@@ -15,6 +15,24 @@ $font-color-light:#F0F9FF;
     font-size: 48px;
     line-height: 130%;
 }
+%h2 {
+    font-family: 'raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+%h3 {
+    font-family: 'raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+}
 
 %p {
     font-family: 'raleway';
@@ -26,13 +44,3 @@ $font-color-light:#F0F9FF;
     color: $font-color-main;
 }
 
-%h3 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-
-}
