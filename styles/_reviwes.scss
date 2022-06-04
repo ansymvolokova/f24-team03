@@ -1,79 +1,75 @@
 #cases {
     background-color: $light-blue;
     margin: 120px 0;
+    height: fit-content;
+    
+    h3 {
+        @extend %h3;
+        color: $dark-blue;
+        text-align: center;
+        padding: 72px;
+    }
 }
-
-.quote {
+// цитата
+.quote__1 {
     position: relative;
     img {
         width: 44px;
         height: 31px;
-        position: absolute;
-        top: -50px;
-        left: 72px;
-        color: $dark-blue;
+        position: absolute;      
+        left: 120px;
 
     }
     h2{
         @extend %h2;
         color: $dark-blue;
-        letter-spacing: 1.5px;
-        line-height: 130%;
+        margin-left: 144px;
+        padding: 1em;
+            
     }
-
 }
 
-h3 {
-    @extend %h3;
-    color: $dark-blue;
-    text-align: center;
-    padding: 72px;
-}
-
-
-// Карусель
-.carousel-item {
-    margin-top: 600px;
-}
-
-.reviews-card {
-    display: flex;
+    // Карусель
+#carousel__reviews {
+    width: 60%;
     margin: 72px auto;
 
-    .case {
-        width: 450px;
-        background-color: $bg-color-cards;
-        margin: 72px auto;
-    }
-      
-    p {
-        width: 395px;
-        margin: 24px;
-        @extend %p;
-    }
-    span {
-        color: #ABB1B9;
-        text-transform: uppercase;
-    }
-    span.reviews-card__patient {
-        color: $dark-blue;
-        text-transform: none;
-
-    }
-
-}
-.carousel {
     li {
         border: 1px solid $dark-blue;
-        border-radius: 50px;
     }
+    
 }
-.carousel-control-prev-icon {
-    display: flex;
-    color: $dark-blue;
-    align-items: center;
-    justify-content: center;
+.carousel-item__reviews{
+    width: 50%;
+    margin: 0 72px;
 }
+
+#carousel-inner__reviews {
+    
+    .reviews-card {
+        padding: 24px;
+        
+        p {
+            
+            @extend %p;
+        }
+        span {
+            color: $dark-blue;
+            text-transform: uppercase;
+        }
+
+        span.reviews-card__patient {
+            color: $dark-blue;
+            text-transform: none;
+
+        }
+
+    }
+}   
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        filter:url(#sea);
+        
+    }
 
 
 
