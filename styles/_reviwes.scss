@@ -74,17 +74,6 @@
             line-height: 120%;
             padding: 60px;
         }
-      
-.reviews-card {
-    width: 450px;
-    background-color: $bg-color-cards;
-    margin: 72px auto;
-    
-    p {
-        width: 395px;
-        margin: 24px;
-        @extend %p;
-
     }
     // цитата
     .quote__1 {
@@ -178,6 +167,7 @@
         }
     }
 }
+
 
 
 
