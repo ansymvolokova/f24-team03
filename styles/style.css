@@ -184,10 +184,97 @@
   text-transform: none;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  filter: url(#sea);
-}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  #cases {
+    margin: 72px 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #cases h3 {
+    font-weight: 700;
+    font-size: 0.75em;
+    line-height: 120%;
+    padding: 60px;
+  }
 
+  .quote__1 {
+    position: relative;
+  }
+  .quote__1 img {
+    width: 40px;
+    height: 28px;
+    position: absolute;
+    left: 72px;
+  }
+  .quote__1 h2 {
+    font-size: 2em;
+    margin-left: 100px;
+    padding: 1em;
+  }
+
+  #carousel__reviews {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #carousel__reviews li {
+    border: 1px solid #F0F9FF;
+  }
+
+  #carousel-inner__reviews .reviews-card {
+    width: 70%;
+    margin: 72px auto;
+    box-sizing: border-box;
+  }
+  #carousel-inner__reviews .reviews-card p {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 599px) {
+  #cases {
+    margin: 24px 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #cases h3 {
+    font-size: 0.5em;
+    line-height: 80%;
+    padding: 24px 24px 0 24px;
+  }
+
+  .quote__1 {
+    position: relative;
+  }
+  .quote__1 img {
+    width: 25px;
+    height: 18px;
+    position: absolute;
+    left: 24px;
+  }
+  .quote__1 h2 {
+    font-size: 1em;
+    margin-left: 48px;
+    line-height: 150%;
+  }
+
+  #carousel__reviews {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #carousel__reviews li {
+    border: 0.5px solid #F0F9FF;
+  }
+
+  #carousel-inner__reviews .reviews-card {
+    width: 70%;
+    margin: 48px auto;
+    box-sizing: border-box;
+  }
+  #carousel-inner__reviews .reviews-card p {
+    font-size: 0.5em;
+  }
+}
 .patents__description, .patents__banner {
   width: 84vw;
   height: 35vh;
