@@ -15,13 +15,19 @@
     } 
 }
 
+.carousel-inner-2{
+    margin: 0;
+    padding: 0 1rem;
+    & img{
+       @extend %size;
+    }
+}
 
 .carousel-item .active {
     display: flex;
     gap:3vw;
     padding: 3rem;
-    
-    
+        
 } 
 
 
