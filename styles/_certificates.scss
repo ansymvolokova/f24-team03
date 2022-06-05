@@ -30,17 +30,10 @@
     }
 }
 
-@media (max-width: 540px) {
+
 
     .carousel-indicators{
         display: none;
     }
 
-
-    .carousel-control-prev-icon {
-        left: auto;
-        right: 45%;
-        bottom: 50%;
-        transform: rotate(90deg);
-    }
 }
