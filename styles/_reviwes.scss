@@ -1,6 +1,6 @@
 #cases {
     background-color: $light-blue;
-    margin: 120px 0;
+    margin: 0;
     height: fit-content;
     
     h3 {
@@ -67,8 +67,6 @@
 @media screen and (min-width: 600px) and (max-width: 900px) {
 
     #cases {
-        margin: 72px 0;
-        height: fit-content;
         
         h3 {
             font-weight: 700;
@@ -122,8 +120,6 @@
 @media screen and (max-width: 599px) {
 
     #cases {
-        margin: 24px 0;
-        height: fit-content;
         
         h3 {
             font-size: 0.5em;

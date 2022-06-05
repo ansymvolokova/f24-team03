@@ -7,7 +7,7 @@
   line-height: 130%;
 }
 
-.quote__1 h2 {
+.quote__1 h2, #services h2 {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -25,7 +25,7 @@
   text-transform: uppercase;
 }
 
-#carousel-inner__reviews .reviews-card p {
+#carousel-inner__reviews .reviews-card p, #services p {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -134,9 +134,49 @@
   color: #1971C2;
 }
 
+#services {
+  background-color: #F9F9F9;
+}
+#services h2 {
+  margin: 15rem 144px 0;
+  text-align: center;
+  line-height: 180%;
+}
+#services .content {
+  margin: 0 144px 72px;
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  #services h2 {
+    font-size: 2em;
+    margin-left: 48px;
+    margin-right: 48px;
+    text-align: center;
+  }
+  #services .content {
+    margin: 0 72px 48px;
+  }
+  #services p {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 599px) {
+  #services h2 {
+    font-size: 1em;
+    margin-left: 24px;
+    margin-right: 24px;
+    line-height: 150%;
+    text-align: center;
+  }
+  #services .content {
+    margin: 0 24px 48px;
+  }
+  #services p {
+    font-size: 0.5em;
+  }
+}
 #cases {
   background-color: #D0EBFF;
-  margin: 120px 0;
+  margin: 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -185,12 +225,6 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
-  #cases {
-    margin: 72px 0;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
   #cases h3 {
     font-weight: 700;
     font-size: 0.75em;
@@ -231,12 +265,6 @@
   }
 }
 @media screen and (max-width: 599px) {
-  #cases {
-    margin: 24px 0;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
   #cases h3 {
     font-size: 0.5em;
     line-height: 80%;
