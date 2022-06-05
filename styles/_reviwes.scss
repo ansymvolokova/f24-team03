@@ -32,22 +32,26 @@
     // Карусель
 #carousel__reviews {
     width: 60%;
-    margin: 72px auto;
+    margin: 0 auto;
 
     li {
-        border: 1px solid $dark-blue;
+        border: 2px solid $font-color-light;
+        
     }
     
 }
 .carousel-item__reviews{
-    width: 50%;
-    margin: 0 72px;
+
 }
 
 #carousel-inner__reviews {
-    
+   
     .reviews-card {
-        padding: 24px;
+        width: 60%;
+        margin: 72px auto;
+        box-sizing: border-box;
+        
+
         
         p {
             

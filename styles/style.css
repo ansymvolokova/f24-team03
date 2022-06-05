@@ -164,19 +164,16 @@
 
 #carousel__reviews {
   width: 60%;
-  margin: 72px auto;
+  margin: 0 auto;
 }
 #carousel__reviews li {
-  border: 1px solid #1971C2;
-}
-
-.carousel-item__reviews {
-  width: 50%;
-  margin: 0 72px;
+  border: 2px solid #F0F9FF;
 }
 
 #carousel-inner__reviews .reviews-card {
-  padding: 24px;
+  width: 60%;
+  margin: 72px auto;
+  box-sizing: border-box;
 }
 #carousel-inner__reviews .reviews-card span {
   color: #1971C2;
