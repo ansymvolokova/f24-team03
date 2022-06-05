@@ -48,8 +48,6 @@
         margin: 72px auto;
         box-sizing: border-box;
         
-
-        
         p {
             
             @extend %p;
@@ -64,7 +62,6 @@
             text-transform: none;
 
         }
-
     }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
@@ -117,10 +114,8 @@
             box-sizing: border-box;
             
             p {
-                
-               font-size: 0.8em;
-            }
-            
+                font-size: 0.8em;
+            }    
         }
     }
 }
@@ -159,10 +154,8 @@
         margin: 0 auto;
 
         li {
-            border: 0.5px solid $font-color-light;
-            
-        }
-        
+            border: 0.5px solid $font-color-light;       
+        }      
     }
 
     #carousel-inner__reviews {
@@ -173,10 +166,8 @@
             box-sizing: border-box;
             
             p {
-                
-               font-size: 0.5em;
-            }
-            
+                font-size: 0.5em;
+            }           
         }
     }
 }
