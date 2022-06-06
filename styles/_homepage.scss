@@ -133,6 +133,60 @@
     }
 }
 
+/*section about me*/
+.about-me {
+    display: flex;
+    padding: 8%;
+
+    .my-foto {
+        width: 70%;
+        img {
+            width: 100%;
+            border-radius: 15px;
+        }
+    }
+
+    .about-me_content {
+        padding-top: 1%;
+        padding-left: 3%;
+    
+        h2 {
+            font: $font;
+            font: {
+                size: calc(10px + 6 * (100vw / 1200));
+                weight: bold;
+    
+            }
+            color: $dark-blue;
+        }
+    
+        h3 {
+            font: $font;
+            font: {
+                size: calc(20px + 16 * (100vw / 1200));
+                weight: bold;
+            }
+        }
+    
+        p {
+            font: $font;
+            font: {
+                size: calc(10px + 6 * (100vw / 1200));
+                weight: normal;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/**/
+
 @media only screen and (max-width: 900px) {
     .home-page {
         height: 35rem;
@@ -150,7 +204,7 @@
 
 @media only screen and (max-width: 600px) {
     .home-page {
-        height: 20rem;
+        height: 35rem;
     }
 
     .content_home {
@@ -167,28 +221,30 @@
 
 @media only screen and (max-width: 450px) {
     .home-page {
-        height: 500px;
-    }
+        height: 570px;
 
-    .content_home {
-        width: 190%;
-        height: 80%;
+        .content_home {
+            width: 190%;
+            height: 80%;
+    
+            .logo {
+                p {
+                    padding-top: 10px;
+                    font-size: 16px;
+                }
+            }
+        }
 
-        .logo {
-            p {
-                padding-top: 10px;
-                font-size: 16px;
+        .circle-wraper{
+            #circle {
+                display: none;
             }
         }
     }
 
-    .circle-wraper{
-        #circle {
-            display: none;
-        }
-    }
-
-    .number-blocks {
+    .numbers-block {
+        margin: 0%;
+        padding: 0%;
         display: none;
     }
 }
