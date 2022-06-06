@@ -149,12 +149,58 @@
   color: #1971C2;
 }
 
-
 .numbers-block .vl {
   border-left: 1px solid #1971C2;
   height: 50%;
 }
 
+/*section about me*/
+.about-me {
+  display: flex;
+  padding: 8%;
+}
+
+.about-me .my-foto {
+  width: 70%;
+}
+
+.about-me .my-foto img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-me .about-me_content {
+  padding-top: 1%;
+  padding-left: 3%;
+}
+
+.about-me .about-me_content h2 {
+  font: "raleway";
+  font-size: calc(10px + 6 * (100vw / 1200));
+  font-weight: bold;
+  color: #1971C2;
+}
+
+.about-me .about-me_content h3 {
+  font: "raleway";
+  font-size: calc(20px + 16 * (100vw / 1200));
+  font-weight: bold;
+}
+
+.about-me .about-me_content p {
+  font: "raleway";
+  font-size: calc(10px + 6 * (100vw / 1200));
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 1400px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/**/
 @media only screen and (max-width: 900px) {
   .home-page {
     height: 35rem;
@@ -170,7 +216,7 @@
 
 @media only screen and (max-width: 600px) {
   .home-page {
-    height: 20rem;
+    height: 35rem;
   }
   .content_home {
     width: 190%;
@@ -183,33 +229,26 @@
 
 @media only screen and (max-width: 450px) {
   .home-page {
-    height: 500px;
+    height: 570px;
   }
-  .content_home {
+  .home-page .content_home {
     width: 190%;
     height: 80%;
   }
-  .content_home .logo p {
+  .home-page .content_home .logo p {
     padding-top: 10px;
     font-size: 16px;
   }
-  .circle-wraper #circle {
+  .home-page .circle-wraper #circle {
     display: none;
   }
-  .numder-blocks {
+  .numbers-block {
+    margin: 0%;
+    padding: 0%;
     display: none;
   }
 }
 
-.banner {
-  width: 1160px;
-  height: 260px;
-  background-color: #1971C2;
-  position: relative;
-  max-width: 100%;
-  margin: 116px auto;
-  box-sizing: border-box;
-  
 #services {
   background-color: #F9F9F9;
 }
@@ -258,8 +297,6 @@
 #cases {
   background-color: #D0EBFF;
   margin: 0;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -291,24 +328,14 @@
   margin: 0 auto;
 }
 
-
-.reviews-card {
-  width: 446px;
-  background-color: #F0F9FF;
-  display: flex;
-  flex-wrap: nowrap;
-  margin: 72px;
-
 #carousel__reviews li {
   border: 2px solid #F0F9FF;
-
 }
 
 #carousel-inner__reviews .reviews-card {
   width: 60%;
   margin: 72px auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #carousel-inner__reviews .reviews-card span {
@@ -352,8 +379,7 @@
   #carousel-inner__reviews .reviews-card {
     width: 70%;
     margin: 72px auto;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   #carousel-inner__reviews .reviews-card p {
     font-size: 0.8em;
@@ -390,8 +416,7 @@
   #carousel-inner__reviews .reviews-card {
     width: 70%;
     margin: 48px auto;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   #carousel-inner__reviews .reviews-card p {
     font-size: 0.5em;
@@ -505,9 +530,6 @@
   color: #1971C2;
 }
 
-
-.certificates .carousel-item {
-
 .carousel__container {
   margin-bottom: 5rem;
 }
@@ -517,9 +539,6 @@
 }
 
 .carousel-certificates {
-  display: -webkit-box;
-  display: -ms-flexbox;
-
   display: flex;
   gap: 2rem;
   width: 90vw;
@@ -528,15 +547,9 @@
 
 @media (max-width: 540px) {
   .carousel-certificates {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
-
-.carousel-item .active {
 
 .carousel-indicators {
   display: none;
@@ -591,12 +604,8 @@ textarea {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 8vh;
   background-color: #F0F9FF;
 }
