@@ -1,10 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 //переменные
 @import 'variables';
 @import "homepage";
+@import 'services';
 @import 'reviwes';
 @import 'patents';
-@import'certificates';
+@import 'certificates';
+@import 'form';
+
 
 /* шрифты */
 @font-face {
@@ -26,6 +30,8 @@
   font-style: normal;
 
 }
+
+
 /**/
 
 

@@ -1,0 +1,56 @@
+#services {
+    background-color: $bg-color;
+
+    h2 {
+        @extend %h2;
+        margin: 15rem 144px 0;
+        text-align: center;
+        line-height: 180%;
+    }
+    .content {
+        margin: 0 144px 72px;
+    }
+
+    p {
+        @extend %p;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    #services {
+        
+        h2 {
+            font-size: 2em;
+            margin-left: 48px;
+            margin-right: 48px;
+            text-align: center;
+        }
+        .content {
+            margin: 0 72px 48px;
+        }
+    
+        p {
+            font-size: 0.8em;
+        }
+    }
+}
+
+@media screen and (max-width: 599px){
+    #services {
+        
+        h2 {
+            font-size: 1em;
+            margin-left: 24px;
+            margin-right: 24px;
+            line-height: 150%;
+            text-align: center;
+        }
+        .content {
+            margin: 0 24px 48px;
+        }
+    
+        p {
+            font-size: 0.5em;
+        }
+    }
+
+}
