@@ -504,26 +504,26 @@
 
 .form {
   background-color: #1971C2;
-  height: 768px;
+  height: 60Vh;
 }
 
 .form .mainform {
   display: block;
   position: absolute;
-  width: 651px;
-  height: 361px;
-  left: 600px;
+  width: 45%;
+  height: 50%;
+  left: 25%;
   margin-top: 100px;
   color: #F0F9FF;
-  font-size: 24px;
+  font-size: 1em;
 }
 
 .form .mainform p {
-  font-size: 30px;
+  font-size: 1.25em;
 }
 
 input, textarea {
-  width: 500px;
+  width: 80%;
   background-color: #1971C2;
   outline: none;
   border: none;
@@ -532,23 +532,52 @@ input, textarea {
 }
 
 textarea {
-  width: 600px;
-  height: 100px;
+  width: 85%;
+  height: 20%;
 }
 
 .buttonform {
   border-radius: 30px;
-  width: 182px;
-  height: 56px;
+  width: 20vh;
+  height: 5vh;
+  font-size: 1em;
   background-color: #F0F9FF;
   border: solid 1px #1971C2;
   color: #1971C2;
 }
 
 .button {
-  display: block;
-  position: absolute;
-  left: 230px;
+  text-align: center;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 8vh;
+  background-color: #F0F9FF;
+}
+
+.footer .inform {
+  font-size: 1em;
+  color: #1971C2;
+  text-decoration: none;
+  padding-right: 1.5em;
+  padding-top: 3vh;
+}
+
+@media screen and (max-width: 899px) {
+  .form {
+    height: 55Vh;
+  }
+  .buttonform {
+    border-radius: 30px;
+    width: 15vh;
+    height: 4vh;
+  }
 }
 
 /* шрифты */
