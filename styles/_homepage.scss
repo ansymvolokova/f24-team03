@@ -1,133 +1,197 @@
-$font: 'raleway';
 
-    .home-page {
-        display: flex;
-        position: relative;
-        height: 40rem;
-        background-color: #D0EBFF;
-    
-        .logo {
-        display: flex;
-        align-items: center;
-        padding-top: 3%;
+.home-page {
+    display: flex;
+    position: relative;
+    height: 45rem;
+    background-color: $light-blue;
 
-        .logo_wraper {
-            width: 10%;
-        }
-    
-        img {
-            width: 100%;
-        }
-    
-        p {
-            padding-left: 2%;
-            padding-top: 1%;
-            letter-spacing: 2px;
-            color: #1971C2;
-    
-            font: {
-            font: $font;
-            size: 16pt;
-            weight: bold;
-            }
-        }
-        }
-    
-        .content_home {
-        padding-left: 10%;
-        
-    
-        .help {
-            width: 65%;
-            padding-bottom: 15px;
-            font: {
-            size: 14pt;
-            weight: normal;
-            font: $font;
-            }
-        }
-        .button-form {
-            padding-left: 25%;
-        }  
-        }
-    
-        h1 {
-        padding-top: 2%;
-        padding-bottom: 4%;
-        
-        letter-spacing: 2px;
-        color: #1971C2;
-    
-        font: {
-            font: $font;
-            size: calc(20px + 23 * (100vw / 605));
-            weight: bold;
-        }
-        }
+    .logo {
+    display: flex;
+    align-items: center;
+    padding-top: 3%;
 
-        .circle-wraper {
-            display: flex;
-            align-items: flex-end;
-            width: 40%;
-        }
-        
-        #circle {
-        display: flex;
-        align-self: flex-end;
+    .logo_wraper {
+        width: 10%;
+    }
+
+    img {
         width: 100%;
-        }
-    
-        button {
-        padding: 0.8rem 1.5rem;
-        border-radius: 30px;
-        border: solid 1px #1971C2;
-        background-color: #1971C2;
-        color: #FFFFFF;
-        cursor: pointer;
-        letter-spacing: 1.5px;
+    }
+
+    p {
+        padding-left: 2%;
+        padding-top: 1%;
+        letter-spacing: 2px;
+        color: $dark-blue;
+        font: $font;
+
         font: {
-            size: 16pt;
-            weight: normal;
-            font: $font;
-        }
+        size: 16pt;
+        weight: bold;
         }
     }
+    }
+
+    .content_home {
+    padding-left: 10%;
     
-    .numbers-block {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: absolute;
-        width: 1077px;
-        height: 210px;
-        right: 15%;
-        top: 630px;
-    
-        border-radius: 8px;
-        background: #FFFFFF;
-    
-        .numbers {
+
+    .help {
+        width: 65%;
+        padding-bottom: 15px;
+        font: $font;
         font: {
-            size: 35pt;
-            weight: bold;
-            font: $font;
+        size: 14pt;
+        weight: normal;
         }
-        color: #1971C2;
-        }
+    }
+    .button-form {
+        padding-left: 25%;
+    }  
+    }
+
+    h1 {
+    padding-top: 2%;
+    padding-bottom: 4%;
     
-        p {
+    letter-spacing: 2px;
+    color: #1971C2;
+
+    font: $font;
+    font-size: calc(20px + 23 * (100vw / 605));
+    font-weight: bold;
+    }
+
+    .circle-wraper {
+        display: flex;
+        align-items: flex-end;
+        width: 40%;
+    }
+    
+    #circle {
+    display: flex;
+    align-self: flex-end;
+    width: 100%;
+    }
+
+    button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    border: solid 1px $dark-blue;
+    background-color: $dark-blue;
+    color: #FFFFFF;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    font: $font;
+    font: {
+        size: calc(10px + 6 * (100vw / 1200));
+        weight: normal;
+    }
+    box-shadow: 0px 5px 10px 0px rgba(129, 129, 129, 0.5);
+    }
+}
+
+.numbers-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 70%;
+    height: 35%;
+    right: 15%;
+    top: 660px;
+
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 0px rgba(129, 129, 129, 0.5);
+    background: #FFFFFF;
+
+    .numbers {
+        font: $font;
+        font: {
+            size: calc(15px + 15 * (100vw / 1000));
+            weight: bold;
+
+        }
+        color: $dark-blue;
+    }
+
+    p {
         display: flex;
         justify-content: center;
         letter-spacing: 2px;
+        font: $font;
         font: {
-            size: 16pt;
+            size: calc(10px + 6 * (100vw / 1200));
             weight: normal;
-            font: $font;
         }
-        color: #1971C2;
+        color: $dark-blue;
+    }
+
+    .vl {
+        border-left: 1px solid $dark-blue;
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .home-page {
+        height: 35rem;
+    }
+
+    .content_home {
+        padding-top: 5%;
+    }
+
+    .numbers-block {
+        height: 15%;
+        top: 550px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-page {
+        height: 20rem;
+    }
+
+    .content_home {
+        width: 190%;
+        height: 80%;
+    }
+
+    .circle-wraper{
+        #circle {
+            display: none;
         }
     }
-    
+}
+
+@media only screen and (max-width: 450px) {
+    .home-page {
+        height: 500px;
+    }
+
+    .content_home {
+        width: 190%;
+        height: 80%;
+
+        .logo {
+            p {
+                padding-top: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .circle-wraper{
+        #circle {
+            display: none;
+        }
+    }
+
+    .numder-blocks {
+        display: none;
+    }
+}
 
 
 
