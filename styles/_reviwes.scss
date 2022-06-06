@@ -1,52 +1,174 @@
-.banner {
-    width: 1160px;
-    height: 260px;
-    background-color: $dark-blue;
+#cases {
+    background-color: $light-blue;
+    margin: 0;
+    height: fit-content;
+    
+    h3 {
+        @extend %h3;
+        color: $dark-blue;
+        text-align: center;
+        padding: 72px;
+    }
+}
+// цитата
+.quote__1 {
     position: relative;
-    max-width: 100%;
-    margin: 116px auto; 
-    box-sizing:border-box;
-
     img {
         width: 44px;
         height: 31px;
-        position: absolute;
-        top: -50px;
-        left: 72px;
-
-    }
-    h1 {
-        @extend %h1;
-        color: $font-color-light;
-        position: absolute;
-        top: 96px;
+        position: absolute;      
         left: 120px;
-    }
 
-}
-.carousel-item {
-    margin: 72px auto; 
-}
-.reviews-card {
-    width: 446px;
-    background-color: $bg-color-cards;
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 72px;
-
-    p {
-        width: 395px;
-        margin: 24px;
-        @extend %p;
     }
-    span {
-        color: #ABB1B9;
-        text-transform: uppercase;
-    }
-    span.reviews-card__patient {
+    h2 {
+        @extend %h2;
         color: $dark-blue;
-        text-transform: none;
+        margin-left: 144px;
+        padding: 1em;
+            
+    }
+}
 
+    // Карусель
+#carousel__reviews {
+    width: 60%;
+    margin: 0 auto;
+
+    li {
+        border: 2px solid $font-color-light;
+        
+    }
+    
+}
+
+#carousel-inner__reviews {
+
+    .reviews-card {
+        width: 60%;
+        margin: 72px auto;
+        box-sizing: border-box;
+        
+        p {
+            
+            @extend %p;
+        }
+        span {
+            color: $dark-blue;
+            text-transform: uppercase;
+        }
+
+        span.reviews-card__patient {
+            color: $dark-blue;
+            text-transform: none;
+
+        }
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+    #cases {
+        
+        h3 {
+            font-weight: 700;
+            font-size: 0.75em;
+            line-height: 120%;
+            padding: 60px;
+        }
+    }
+    // цитата
+    .quote__1 {
+        position: relative;
+        img {
+            width: 40px;
+            height: 28px;
+            position: absolute;      
+            left: 72px;
+
+        }
+        h2 {
+            font-size: 2em;
+            margin-left: 100px;
+            padding: 1em;
+            
+        }
+    }
+        // Карусель
+    #carousel__reviews {
+        width: 80%;
+        margin: 0 auto;
+
+        li {
+            border: 1px solid $font-color-light;
+            
+        }
+        
     }
 
+    #carousel-inner__reviews {
+
+        .reviews-card {
+            width: 70%;
+            margin: 72px auto;
+            box-sizing: border-box;
+            
+            p {
+                font-size: 0.8em;
+            }    
+        }
+    }
 }
+@media screen and (max-width: 599px) {
+
+    #cases {
+        
+        h3 {
+            font-size: 0.5em;
+            line-height: 80%;
+            padding: 24px 24px 0 24px;
+        }
+    }
+    // цитата
+    .quote__1 {
+        position: relative;
+        img {
+            width: 25px;
+            height: 18px;
+            position: absolute;      
+            left: 24px;
+
+        }
+        h2 {
+            font-size: 1em;
+            margin-left: 48px;
+            line-height: 150%;
+            
+        }
+    }
+        // Карусель
+    #carousel__reviews {
+        width: 100%;
+        margin: 0 auto;
+
+        li {
+            border: 0.5px solid $font-color-light;       
+        }      
+    }
+
+    #carousel-inner__reviews {
+
+        .reviews-card {
+            width: 70%;
+            margin: 48px auto;
+            box-sizing: border-box;
+            
+            p {
+                font-size: 0.5em;
+            }           
+        }
+    }
+}
+
+
+
+
+
