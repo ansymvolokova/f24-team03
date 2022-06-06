@@ -99,7 +99,8 @@
     width: 70%;
     height: 35%;
     right: 15%;
-    top: 660px;
+    bottom: 0;
+    transform: translateY(50%);
 
     border-radius: 8px;
     box-shadow: 0px 5px 10px 0px rgba(129, 129, 129, 0.5);
@@ -198,7 +199,6 @@
 
     .numbers-block {
         height: 15%;
-        top: 550px;
     }
 }
 
