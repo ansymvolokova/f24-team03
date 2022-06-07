@@ -103,6 +103,7 @@ header {
       a {
         color: $dark-blue;
         white-space: nowrap;
+        @extend %p;
       }
     }
 
@@ -119,6 +120,10 @@ header {
         color: $dark-blue;
         cursor: pointer;
       }
+      a {
+        @extend %p;
+      }
+      
 
       img {
         cursor: pointer;
@@ -208,6 +213,19 @@ header {
   width: 100%;
   margin: 0 auto;
   padding: $large-padding;
+
+  h2 {
+    @extend %h2;
+    
+  }
+
+  h4 {
+    @extend %h4;
+  }
+
+  li {
+    @extend %p;
+  }
 }
 
 #education {
@@ -218,19 +236,32 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
   .quote {
-    color: #fff;
+    color: $font-color-light;;
 
     h2 {
       margin-left: $extra-large-padding;
+      @extend %h2;
     }
+
   }
 
   .timeline {
     color: #fff;
     max-width: 812px;
     width: 100%;
+
+    h4 {
+      @extend %h4;
+      color: $font-color-light;
+    }
+  
+    li {
+      @extend %p;
+      color: $font-color-light;
+    }  
 
     > div {
       &:after {
