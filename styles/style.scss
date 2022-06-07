@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 //переменные
 @import 'variables';
@@ -14,21 +13,19 @@
 @font-face {
   font-family: 'raleway';
   src: url('../assets/fonts/raleway-bold-webfont.woff2') format('woff2'),
-      url('../assets/fonts/raleway-bold-webfont.woff') format('woff'),
-      url('../assets/fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+  url('../assets/fonts/raleway-bold-webfont.woff') format('woff'),
+  url('../assets/fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
   font-weight: bold;
   font-style: normal;
-
 }
 
 @font-face {
   font-family: 'raleway';
   src: url('../assets/fonts/raleway-regular-webfont.woff2') format('woff2'),
-      url('../assets/fonts/raleway-regular-webfont.woff') format('woff'),
-      url('../assets/fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+  url('../assets/fonts/raleway-regular-webfont.woff') format('woff'),
+  url('../assets/fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
 
 
@@ -55,37 +52,110 @@
 
 html {
   height: 100%;
-  overflow-x:hidden;  /*для горизонтального*/
+  overflow-x: hidden; /*для горизонтального*/
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.2;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
 }
 
 header {
+  background-color: $light-blue;
+  padding: $large-padding 10% 0 10%; // percentage is used to meet header content padding TODO: improve
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+
+  .navbar-toggler {
+    display: none;
+    color: $dark-blue;
+  }
+
   .nav-menu {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    background-color: #D0EBFF;
-    @include row-gap(3rem);
+    @include row-gap($xx-large-padding);
 
-    .links {
-      display: flex;
-      @include row-gap(1rem);
-
-      a {
-        color: #1971C2;
+    &.collapse {
+      &:not(.show) {
+        display: flex;
+      }
+      &.show {
+        display: flex;
       }
     }
 
-    button {
-      padding: 0.25rem 0.5rem;
-      border-radius: 30px;
-      border: solid 1px #1971C2;
-      background-color: transparent;
-      color: #1971C2;
-      cursor: pointer;
+    .links {
+      display: flex;
+      @include row-gap($default-padding);
+
+      a {
+        color: $dark-blue;
+        white-space: nowrap;
+        @extend %p;
+      }
     }
 
-    img {
-      cursor: pointer;
+    .action-buttons {
+      display: flex;
+      align-items: center;
+      @include row-gap($xx-large-padding);
+
+      button {
+        padding: $extra-small-padding $small-padding;
+        border-radius: 30px;
+        border: solid 1px $dark-blue;
+        background-color: transparent;
+        color: $dark-blue;
+        cursor: pointer;
+      }
+      a {
+        @extend %p;
+      }
+      
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .navbar-toggler {
+      display: initial;
+    }
+
+    .nav-menu {
+      flex-direction: column;
+      align-items: flex-end;
+      @include column-gap($large-padding);
+      @include row-gap(0);
+      padding: $default-padding 0;
+
+      &.collapse:not(.show) {
+        display: none;
+      }
+
+      .links {
+        flex-direction: column;
+        @include column-gap($default-padding);
+        @include row-gap(0);
+      }
+
+      button {
+        margin-right: $default-padding;
+      }
     }
   }
 
@@ -102,23 +172,23 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include column-gap(4rem);
+  @include column-gap($xxx-large-padding);
 
   .content {
     display: flex;
     flex-direction: column;
-    @include column-gap(4rem);
+    @include column-gap($xxx-large-padding);
 
     .row {
       display: flex;
       align-items: center;
-      @include row-gap(2rem);
+      @include row-gap($extra-large-padding);
 
       .item {
         flex: 1;
         display: flex;
         align-items: center;
-        @include row-gap(1rem);
+        @include row-gap($default-padding);
 
         .checkmark {
           min-width: 34px;
@@ -127,7 +197,7 @@ header {
           display: flex;
           justify-content: center;
           align-items: center;
-          background-color: #D0EBFF;
+          background-color: $light-blue;
         }
 
         p {
@@ -138,101 +208,169 @@ header {
   }
 }
 
-#education, #work-experience {
-  .item {
-    display: flex;
-    flex: auto;
-    overflow-y: auto;
-    padding: 0 1rem 0 1rem;
+#work-experience {
+  max-width: 812px; // due to design
+  width: 100%;
+  margin: 0 auto;
+  padding: $large-padding;
 
-    .timeline {
-      display: table; //*For Firefox
-      height: 100%;
-      margin: {
-        left: auto;
-        right: auto;
-        top: 5rem;
+  h2 {
+    @extend %h2;
+    
+  }
+
+  h4 {
+    @extend %h4;
+  }
+
+  li {
+    @extend %p;
+  }
+}
+
+#education {
+  margin-top: $xxx-large-padding;
+  padding: $xxx-large-padding $large-padding;
+  width: 100%;
+  background: $dark-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+  .quote {
+    color: $font-color-light;;
+
+    h2 {
+      margin-left: $extra-large-padding;
+      @extend %h2;
+    }
+
+  }
+
+  .timeline {
+    color: #fff;
+    max-width: 812px;
+    width: 100%;
+
+    h4 {
+      @extend %h4;
+      color: $font-color-light;
+    }
+  
+    li {
+      @extend %p;
+      color: $font-color-light;
+    }  
+
+    > div {
+      &:after {
+        background: #fff;
       }
 
-      // цвет таймлайна
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      color: #000;
+      .year ul:first-of-type:after {
+        background: #fff;
+        border: 2px solid $dark-blue;
+      }
+    }
+  }
+}
 
-      > div {
-        position: relative;
-        @include column-gap(1.5rem);
+.timeline {
+  margin-top: $xxx-large-padding;
+  display: table; //*For Firefox
 
-        &:after {
+  // цвет таймлайна
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+
+  > div {
+    position: relative;
+    @include column-gap($large-padding);
+
+    &:after {
+      content: '';
+      width: 2px;
+      position: absolute;
+      top: .5rem;
+      bottom: 0;
+      left: 127px;
+      z-index: 1;
+      background: $dark-blue;
+
+      @media (max-width: 370px) {
+        left: 107px;
+      }
+    }
+
+    .year {
+      position: relative;
+      display: flex;
+      align-items: center;
+      @include row-gap($xxx-large-padding);
+
+      @media (max-width: 370px) {
+        @include row-gap($large-padding);
+      }
+
+      &:first-child section {
+        margin-top: -1.3em;
+        padding-bottom: 0;
+      }
+
+      h4 {
+        min-width: 90px;
+        text-align: right;
+        font-size: 1rem;
+      }
+
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
+
+        @media (min-width: 62em) {
+          font-size: 1.1em;
+        }
+
+        &:last-child {
+          margin: {
+            bottom: 0;
+          }
+        }
+
+        &:first-of-type:after {
           content: '';
-          width: 2px;
+          width: 24px;
+          height: 24px;
+          background: $dark-blue;
+          border: 2px solid #FFFFFF;
           position: absolute;
-          top: .5rem;
+          left: 116px;
+          top: -10px;
           bottom: 0;
-          left: 139px;
-          z-index: 1;
-          background: #1971C2;
+          z-index: 2;
+          margin: auto;
+          @include border-radius(50%);
+
+          @media (max-width: 370px) {
+            left: 96px;
+          }
         }
 
-        .year {
-          position: relative;
-          display: flex;
-          align-items: center;
-          @include row-gap(70px);
+        li {
+          font-size: 1rem;
+          margin-left: $small-padding;
 
-          &:first-child section {
-            margin-top: -1.3em;
-            padding-bottom: 0;
+          &:not(:first-child) {
+            margin-top: $small-padding;
           }
-
-          h4 {
-            min-width: 100px;
-            text-align: right;
-          }
-
-
-          ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            font-size: 1em;
-
-            @media (min-width: 62em) {
-              font-size: 1.1em;
-            }
-
-            &:last-child {
-              margin: {
-                bottom: 0;
-              }
-            }
-
-            &:first-of-type:after {
-              content: '';
-              width: 24px;
-              height: 24px;
-              background: #1971C2;
-              border: 2px solid #FFFFFF;
-              @include border-radius(50%);
-              position: absolute;
-              left: 126px;
-              top: 0;
-              bottom: 0;
-              z-index: 2;
-              margin: auto;
-            }
-
-            li {
-              margin-left: .5rem;
-
-              &:not(:first-child) {
-                margin-top: .5rem;
-              }
-            }
-          }
-
         }
       }
+
     }
   }
 }
