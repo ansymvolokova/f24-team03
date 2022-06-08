@@ -787,6 +787,9 @@ header nav a {
   margin: 0 auto;
   padding: 1.5rem;
 }
+#work-experience h2 {
+  text-align: center;
+}
 #education {
   margin-top: 4rem;
   padding: 4rem 1.5rem;
