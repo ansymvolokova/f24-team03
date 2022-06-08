@@ -8,10 +8,10 @@ $font-color-main:#212529;
 $font-color-light:#F0F9FF;
 
 // fonts
-$font: 'Raleway';
+$font: 'Raleway', sans-serif;
 
 %h1 {
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 130%;
