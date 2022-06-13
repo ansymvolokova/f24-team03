@@ -3,6 +3,7 @@
         text-align: center;  
         @extend %h2;
         margin: 4rem 0;
+        color: $dark-blue;
     }
     & img{
         @extend %size;

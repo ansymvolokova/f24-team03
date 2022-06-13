@@ -462,6 +462,11 @@
   }
 }
 .patents__description .patents__1, .patents__description .patents__2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
   text-align: center;
   padding: 2rem;
   background-color: #F0F9FF;
@@ -493,6 +498,7 @@
 .certificates h2 {
   text-align: center;
   margin: 4rem 0;
+  color: #1971C2;
 }
 .carousel__container {
   margin-bottom: 5rem;

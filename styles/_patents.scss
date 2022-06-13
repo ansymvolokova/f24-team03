@@ -54,10 +54,15 @@
     height: auto;
 
     @media (max-width: 540px) {
-        flex-direction: column; ;
+        flex-direction: column; 
     }
 
     & .patents__1, .patents__2{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
         text-align: center;
         padding: 2rem;
         background-color: $bg-color-cards;
