@@ -1,14 +1,13 @@
 .certificates {
     & h2{
-    text-align: center;  
-    @extend %h1;
-    font-size: 16pt;
-    margin: 5rem 0;
-    text-transform: uppercase;
-    color: $dark-blue;
-}
+        text-align: center;  
+        @extend %h2;
+        font-size: calc(20px + 16 * (100vw / 1200));
+        margin: 4rem 0;
+        color: $dark-blue;
+    }
     & img{
-            @extend %size;
+        @extend %size;
     }
 
 }

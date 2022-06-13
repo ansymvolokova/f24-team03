@@ -11,7 +11,7 @@
         
         h3 {
             @extend %h3;
-            font-size: 1em;
+            font-size: calc(10px + 6 * (100vw / 1200));
             color: $font-color-light;
         }
         p {
@@ -28,7 +28,7 @@
         }
         .buttonform {
             @extend %h3;
-            font-size: 1em;
+            font-size: calc(10px + 6 * (100vw / 1200));
             color: $dark-blue;
             padding: 0.5rem;
         }

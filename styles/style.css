@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
-.certificates h2 {
+.numbers-block .numbers, .home-page h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 130%;
 }
 
-#education .quote h2, #work-experience h2, .quote__1 h2, #services h2 {
+#education .quote h2, #work-experience h2, .certificates h2, .patents__banner h2, .quote__1 h2, #services h2, .about-me .about-me_content h2 {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -15,7 +15,7 @@
   line-height: 42px;
 }
 
-.form .mainform .buttonform, .form .mainform h3, #cases h3 {
+.form .mainform .buttonform, .form .mainform h3, .patents__description h3, #cases h3, .about-me .about-me_content h3, .home-page button, .home-page .logo p {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -34,7 +34,7 @@
   color: #212529;
 }
 
-#education .timeline li, #work-experience li, header .nav-menu .action-buttons a, header .nav-menu .links a, .footer p, .footer a, .form .mainform label, .form .mainform p, #carousel-inner__reviews .reviews-card p, #services p {
+#education .timeline li, #work-experience li, header .nav-menu .action-buttons a, header .nav-menu .links a, .footer p, .footer a, .form .mainform label, .form .mainform p, .patents__description button, .patents__description p, #carousel-inner__reviews .reviews-card p, #services p, .about-me .about-me_content p, .numbers-block p, .home-page .content_home .help {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -66,9 +66,6 @@
   padding-top: 1%;
   letter-spacing: 2px;
   color: #1971C2;
-  font: "Raleway", sans-serif;
-  font-size: 16pt;
-  font-weight: bold;
 }
 .home-page .content_home {
   padding-left: 10%;
@@ -76,9 +73,8 @@
 .home-page .content_home .help {
   width: 65%;
   padding-bottom: 15px;
-  font: "Raleway", sans-serif;
-  font-size: 14pt;
-  font-weight: normal;
+  line-height: 150%;
+  font-size: 18px;
 }
 .home-page .content_home .button-form {
   padding-left: 25%;
@@ -88,9 +84,7 @@
   padding-bottom: 4%;
   letter-spacing: 2px;
   color: #1971C2;
-  font: "Raleway", sans-serif;
   font-size: calc(20px + 3.8016528926vw);
-  font-weight: bold;
 }
 .home-page .circle-wraper {
   display: flex;
@@ -112,12 +106,9 @@
   border-radius: 30px;
   border: solid 1px #1971C2;
   background-color: #1971C2;
-  color: #FFFFFF;
+  color: #F0F9FF;
   cursor: pointer;
-  letter-spacing: 1.5px;
-  font: "Raleway", sans-serif;
   font-size: calc(10px + 0.5vw);
-  font-weight: normal;
   box-shadow: 0px 5px 10px 0px rgba(129, 129, 129, 0.5);
 }
 
@@ -136,18 +127,14 @@
   background: #FFFFFF;
 }
 .numbers-block .numbers {
-  font: "Raleway", sans-serif;
   font-size: calc(15px + 1.5vw);
-  font-weight: bold;
   color: #1971C2;
 }
 .numbers-block p {
   display: flex;
   justify-content: center;
   letter-spacing: 2px;
-  font: "Raleway", sans-serif;
   font-size: calc(10px + 0.5vw);
-  font-weight: normal;
   color: #1971C2;
 }
 .numbers-block .vl {
@@ -172,20 +159,14 @@
   padding-left: 3%;
 }
 .about-me .about-me_content h2 {
-  font: "Raleway", sans-serif;
-  font-size: calc(10px + 0.5vw);
-  font-weight: bold;
-  color: #1971C2;
+  font-size: calc(20px + 1.3333333333vw);
 }
 .about-me .about-me_content h3 {
-  font: "Raleway", sans-serif;
-  font-size: calc(20px + 1.3333333333vw);
-  font-weight: bold;
+  font-size: calc(10px + 0.5vw);
+  color: #1971C2;
 }
 .about-me .about-me_content p {
-  font: "Raleway", sans-serif;
   font-size: calc(10px + 0.5vw);
-  font-weight: normal;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -203,6 +184,9 @@
   .content_home {
     padding-top: 5%;
   }
+  .content_home .help {
+    font-size: 0.75em;
+  }
 
   .numbers-block {
     height: 23%;
@@ -216,6 +200,9 @@
   .content_home {
     width: 190%;
     height: 80%;
+  }
+  .content_home .help {
+    font-size: 0.75em;
   }
 
   .circle-wraper #circle {
@@ -255,6 +242,7 @@
   background-color: #F9F9F9;
 }
 #services h2 {
+  font-size: calc(20px + 1.3333333333vw);
   margin: 15rem 144px 0;
   text-align: center;
   line-height: 180%;
@@ -264,7 +252,7 @@
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
   #services h2 {
-    font-size: 2em;
+    font-size: calc(20px + 1.3333333333vw);
     margin-left: 48px;
     margin-right: 48px;
     text-align: center;
@@ -278,7 +266,7 @@
 }
 @media screen and (max-width: 599px) {
   #services h2 {
-    font-size: 1.5em;
+    font-size: calc(20px + 1.3333333333vw);
     margin-left: 24px;
     margin-right: 24px;
     line-height: 150%;
@@ -299,6 +287,7 @@
   height: fit-content;
 }
 #cases h3 {
+  font-size: calc(10px + 0.5vw);
   color: #1971C2;
   text-align: center;
   padding: 72px;
@@ -314,6 +303,7 @@
   left: 120px;
 }
 .quote__1 h2 {
+  font-size: calc(20px + 1.3333333333vw);
   color: #1971C2;
   margin-left: 144px;
   padding: 1em;
@@ -344,7 +334,7 @@
 @media screen and (min-width: 600px) and (max-width: 900px) {
   #cases h3 {
     font-weight: 700;
-    font-size: 1em;
+    font-size: calc(10px + 0.5vw);
     line-height: 120%;
     padding: 60px;
   }
@@ -359,7 +349,7 @@
     left: 72px;
   }
   .quote__1 h2 {
-    font-size: 2em;
+    font-size: calc(20px + 1.3333333333vw);
     margin-left: 100px;
     padding: 1em;
   }
@@ -383,7 +373,7 @@
 }
 @media screen and (max-width: 599px) {
   #cases h3 {
-    font-size: 0.75em;
+    font-size: calc(10px + 0.5vw);
     line-height: 80%;
     padding: 24px 24px 0 24px;
   }
@@ -398,7 +388,7 @@
     left: 24px;
   }
   .quote__1 h2 {
-    font-size: 1.5em;
+    font-size: calc(20px + 1.3333333333vw);
     margin-left: 48px;
     line-height: 130%;
   }
@@ -422,8 +412,8 @@
 }
 .patents__description, .patents__banner {
   width: 84vw;
-  height: 35vh;
-  margin: 5rem auto;
+  height: 25vh;
+  margin: 2rem auto;
 }
 
 .certificates img, .patents__video video, .patents__banner img {
@@ -448,12 +438,8 @@
 }
 .patents__banner h2 {
   margin: 0.4em 0 0.4em 2.5em;
-  font-family: "Raleway", sans-serif;
-  font-size: calc(20px + 2.8063282702vw);
-  font-weight: 700;
+  font-size: calc(20px + 1.3333333333vw);
   color: #F9F9F9;
-  letter-spacing: 1.5px;
-  line-height: 130%;
 }
 
 .patents__video {
@@ -474,29 +460,27 @@
   }
 }
 .patents__description .patents__1, .patents__description .patents__2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
   text-align: center;
   padding: 2rem;
   background-color: #F0F9FF;
 }
 .patents__description h3 {
+  font-size: calc(10px + 0.5vw);
   margin-bottom: 2.7em;
-  font-size: calc(0.87rem + 0.3vw);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
 }
 .patents__description p {
   margin-bottom: 2em;
-  font-size: calc(0.87rem + 0.3vw);
-  font-weight: 300;
-  letter-spacing: 1px;
 }
 .patents__description button {
   display: inline-block;
-  font-size: calc(0.87rem + 0.3vw);
-  letter-spacing: 1px;
+  font-size: 1em;
   background: #1971C2;
-  color: #fff;
+  color: #F0F9FF;
   padding: 0.9rem 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -512,9 +496,8 @@
 
 .certificates h2 {
   text-align: center;
-  font-size: 16pt;
-  margin: 5rem 0;
-  text-transform: uppercase;
+  font-size: calc(20px + 1.3333333333vw);
+  margin: 4rem 0;
   color: #1971C2;
 }
 .carousel__container {
@@ -554,7 +537,7 @@
   color: #F0F9FF;
 }
 .form .mainform h3 {
-  font-size: 1em;
+  font-size: calc(10px + 0.5vw);
   color: #F0F9FF;
 }
 .form .mainform p {
@@ -566,7 +549,7 @@
   color: #F0F9FF;
 }
 .form .mainform .buttonform {
-  font-size: 1em;
+  font-size: calc(10px + 0.5vw);
   color: #1971C2;
   padding: 0.5rem;
 }
