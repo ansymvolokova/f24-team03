@@ -23,12 +23,8 @@
         padding-top: 1%;
         letter-spacing: 2px;
         color: $dark-blue;
-        font: $font;
-
-        font: {
-        size: 16pt;
-        weight: bold;
-        }
+        @extend %h3;
+        
     }
     }
 
@@ -39,12 +35,11 @@
     .help {
         width: 65%;
         padding-bottom: 15px;
-        font: $font;
-        font: {
-        size: 14pt;
-        weight: normal;
+        @extend %p;
+        line-height: 150% ;
+        font-size: 18px;
+        
         }
-    }
     .button-form {
         padding-left: 25%;
     }  
@@ -57,9 +52,9 @@
     letter-spacing: 2px;
     color: #1971C2;
 
-    font: $font;
+    @extend %h1;
     font-size: calc(20px + 23 * (100vw / 605));
-    font-weight: bold;
+    
     }
 
     .circle-wraper {
@@ -85,14 +80,10 @@
     border-radius: 30px;
     border: solid 1px $dark-blue;
     background-color: $dark-blue;
-    color: #FFFFFF;
+    color: $font-color-light;
     cursor: pointer;
-    letter-spacing: 1.5px;
-    font: $font;
-    font: {
-        size: calc(10px + 6 * (100vw / 1200));
-        weight: normal;
-    }
+    @extend %h3;
+    font-size: calc(10px + 6 * (100vw / 1200));
     box-shadow: 0px 5px 10px 0px rgba(129, 129, 129, 0.5);
     }
 }
@@ -113,12 +104,9 @@
     background: #FFFFFF;
 
     .numbers {
-        font: $font;
-        font: {
-            size: calc(15px + 15 * (100vw / 1000));
-            weight: bold;
-
-        }
+        @extend %h1;
+        font-size: calc(15px + 15 * (100vw / 1000));
+          
         color: $dark-blue;
     }
 
@@ -126,11 +114,8 @@
         display: flex;
         justify-content: center;
         letter-spacing: 2px;
-        font: $font;
-        font: {
-            size: calc(10px + 6 * (100vw / 1200));
-            weight: normal;
-        }
+        @extend %p;
+        font-size: calc(10px + 6 * (100vw / 1200));
         color: $dark-blue;
     }
 
@@ -158,29 +143,23 @@
         padding-left: 3%;
     
         h2 {
-            font: $font;
-            font: {
-                size: calc(10px + 6 * (100vw / 1200));
-                weight: bold;
-    
-            }
-            color: $dark-blue;
+            @extend %h2;
+            font-size: calc(20px + 16 * (100vw / 1200));
+            
+           
         }
     
         h3 {
-            font: $font;
-            font: {
-                size: calc(20px + 16 * (100vw / 1200));
-                weight: bold;
-            }
+            @extend %h3;
+            font-size: calc(10px + 6 * (100vw / 1200));
+            color: $dark-blue;
+           
         }
     
         p {
-            font: $font;
-            font: {
-                size: calc(10px + 6 * (100vw / 1200));
-                weight: normal;
-            }
+            @extend %p;
+            font-size: calc(10px + 6 * (100vw / 1200));
+             
         }
     }
 }
@@ -201,6 +180,10 @@
 
     .content_home {
         padding-top: 5%;
+    
+        .help{
+            font-size: 0.75em;
+        }
     }
 
     .numbers-block {
@@ -216,6 +199,10 @@
     .content_home {
         width: 190%;
         height: 80%;
+
+        .help {
+            font-size: 0.75em;
+        }
     }
 
     .circle-wraper{

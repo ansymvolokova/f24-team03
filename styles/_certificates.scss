@@ -2,6 +2,7 @@
     & h2{
         text-align: center;  
         @extend %h2;
+        font-size: calc(20px + 16 * (100vw / 1200));
         margin: 4rem 0;
         color: $dark-blue;
     }

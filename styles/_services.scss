@@ -3,6 +3,7 @@
 
     h2 {
         @extend %h2;
+        font-size: calc(20px + 16 * (100vw / 1200));
         margin: 15rem 144px 0;
         text-align: center;
         line-height: 180%;
@@ -19,7 +20,7 @@
     #services {
         
         h2 {
-            font-size: 2em;
+            font-size: calc(20px + 16 * (100vw / 1200));
             margin-left: 48px;
             margin-right: 48px;
             text-align: center;
@@ -38,7 +39,7 @@
     #services {
         
         h2 {
-            font-size: 1.5em;
+            font-size: calc(20px + 16 * (100vw / 1200));
             margin-left: 24px;
             margin-right: 24px;
             line-height: 150%;
